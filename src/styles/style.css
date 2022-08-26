@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Silkscreen&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Silkscreen:wght@700&display=swap');
+
+* {
+    font-family: 'Silkscreen', cursive;
+    font-size: 24px;
+}
+
+body {
+    background-color: rgb(119, 118, 118);
+    transition: all 1s;
+}
+
+.game-board {
+    display: flex;
+    align-items: center;
+    margin: 5rem 0;
+}
+
+ol {
+    padding: .5rem 3.2rem;
+}
+
+.historyLi .historyBtn {
+    background-color: #caa2a2;
+    color: #fafafadb;
+}
+
+.historyLi:first-child .historyBtn {
+    background-color: #90ee90;
+}
+
+.board-row:after {
+    clear: both;
+    content: "";
+    display: table;
+}
+
+.status {
+    font: 1rem 'Silkscreen', cursive;
+    margin-top: 2rem
+}
+
+.status {
+    color: #90ee90 !important;
+}
+
+.historyBtn {
+    background: transparent;
+    border: .1rem solid #999;
+    padding: .1rem;
+}
+
+.historyLi {
+    padding: .3rem;
+}
+
+.square {
+    background: #fafafa;
+    border: .1rem solid #999;
+    float: left;
+    font-size: 3rem;
+    font-weight: bold;
+    line-height: 34px;
+    height: 100px;
+    margin-right: -1px;
+    margin-top: -1px;
+    padding: 0;
+    text-align: center;
+    width: 100px;
+}
+
+.square:focus {
+    outline: none;
+}
+
+.kbd-navigation .square:focus {
+    background: #ddd;
+}
+
+.game {
+    display: flex;
+    flex-direction: row;
+    margin: 0 1rem;
+}
+
+.game-start {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+@media screen and (max-width: 992px) {
+    .game-start {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .game {
+        display: block
+    }
+
+    .game-board {
+        margin: 2rem;
+
+    }
+
+    ol {
+        padding: 0 30px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .game-start {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .game {
+        display: block;
+    }
+
+    .game-board {
+        margin: 0;
+    }
+
+    ol {
+        padding: 0 30px;
+    }
+}
